@@ -5,7 +5,15 @@ class QuadTree:
     """
     NB_NODES : int = 4
     def __init__(self, hg: bool | QuadTree, hd: bool | QuadTree, bd: bool | QuadTree,bg: bool | QuadTree):
-        pass
+        """
+        Initialise un nœud QuadTree avec ses quatre sous-arbres.
+
+        Args:
+            hg (bool | QuadTree): Sous-arbre Nord-Ouest.
+            hd (bool | QuadTree): Sous-arbre Nord-Est.
+            bd (bool | QuadTree): Sous-arbre Sud-Ouest.
+            bg (bool | QuadTree): Sous-arbre Sud-Est.
+        """
 
     @property
     def depth(self) -> int:
