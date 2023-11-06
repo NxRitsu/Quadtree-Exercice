@@ -1,4 +1,4 @@
-# Quadtree Exercices
+# Quadtree Exercice
 
 ## Description
 Ce projet consiste en la création d'un Quadtree à partir de données et en sa représentation graphique en utilisant Tkinter.
