@@ -64,7 +64,17 @@ class QuadTree:
 import tkinter as tk
 
 class TkQuadTree(QuadTree):
+    """
+    Classe représentant une interface graphique pour représenter un QuadTree avec Tkinter.
+    Hérite de la classe QuadTree.
+    """
     def __init__(self, data):
+        """
+        Initialise l'interface graphique Tkinter pour représenter un QuadTree.
+
+        Args:
+            data: Les données du QuadTree sous forme de liste.
+        """
         # Appeler le constructeur de la classe parent avec des valeurs arbitraires, car ils seront remplacés dans la méthode draw
         super().__init__(None, None, None, None)
         self.data = data
@@ -74,6 +84,15 @@ class TkQuadTree(QuadTree):
         self.draw(0, 0, 400, self.data)
 
     def draw(self, x, y, size, node):
+        """
+        Dessine le QuadTree de manière récursive.
+
+        Args:
+            x (int): Coordonnée X de la zone de dessin.
+            y (int): Coordonnée Y de la zone de dessin.
+            size (int): Taille de la zone de dessin.
+            node: Le nœud actuel du QuadTree.
+        """
         if isinstance(node, list):
             half_size = size // 2
             self.draw(x, y, half_size, node[0])
@@ -85,6 +104,9 @@ class TkQuadTree(QuadTree):
             self.canvas.create_rectangle(x, y, x + size, y + size, fill=fill_color, outline='black')
 
     def paint(self):
+        """
+        Démarre la boucle principale de l'interface graphique Tkinter pour afficher le dessin du QuadTree.
+        """
         self.root.mainloop()
 
 if __name__ == '__main__':
