@@ -17,18 +17,41 @@ class QuadTree:
 
     @property
     def depth(self) -> int:
-        """ Recursion depth of the quadtree"""
+        """
+        Renvoie la profondeur de la récursion du QuadTree.
+
+        Returns:
+            int: La profondeur de la récursion.
+        """
         return 1
 
 
     @staticmethod
     def fromFile(filename):
+        """
+        Crée un QuadTree à partir d'un fichier.
+
+        Args:
+            filename (str): Le nom du fichier contenant les données du QuadTree.
+
+        Returns:
+            QuadTree: Le QuadTree créé à partir du fichier.
+        """
         with open(filename, 'r') as file:
             data = eval(file.read())  # On utilise eval pour convertir le fichier texte en structure de liste
         return QuadTree.fromList(data)
 
     @staticmethod
     def fromList(data):
+        """
+        Crée un QuadTree à partir de données sous forme de liste.
+
+        Args:
+            data (list): Les données pour créer le QuadTree.
+
+        Returns:
+            QuadTree: Le QuadTree créé à partir des données.
+        """
         if isinstance(data, list):
             # On vérifie si la liste contient des sous-listes
             if isinstance(data[0], list):
