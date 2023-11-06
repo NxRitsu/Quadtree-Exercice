@@ -1,5 +1,8 @@
 from __future__ import annotations
 class QuadTree:
+    """
+    Classe représentant un QuadTree pour organiser des données spatiales.
+    """
     NB_NODES : int = 4
     def __init__(self, hg: bool | QuadTree, hd: bool | QuadTree, bd: bool | QuadTree,bg: bool | QuadTree):
         pass
