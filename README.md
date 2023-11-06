@@ -5,7 +5,7 @@ Ce projet consiste en la création d'un Quadtree à partir de données et en sa 
 
 ## Installation
 1. Assurez-vous d'avoir Python installé.
-2. Clonez le dépôt Git : `git clone https://github.com/votre-utilisateur/votre-projet.git`
+2. Clonez le dépôt Git : `git clone https://github.com/NxRitsu/Quadtree-Exercice.git`
 3. Installez les dépendances à l'aide de `pip` : `pip install -r requirements.txt`
 
 ## Utilisation
