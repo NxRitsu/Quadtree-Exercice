@@ -18,7 +18,7 @@ et de côté 2^n.
 3. Installez les dépendances à l'aide de `pip` : `pip install -r requirements.txt`
 
 ## Utilisation 🚀
-1. Exécutez le script principal : `python main.py`
+1. Exécutez le script principal : `python quadtree.py`
 2. Suivez les instructions pour charger les données et visualiser le Quadtree.
 
 ## Exemple de données 📊
