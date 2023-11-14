@@ -1,4 +1,5 @@
 from __future__ import annotations
+import tkinter as tk
 class QuadTree:
     """
     Classe représentant un QuadTree pour organiser des données spatiales.
@@ -60,8 +61,6 @@ class QuadTree:
             else:
                 # Si la liste est une feuille, on crée un QuadTree avec les valeurs booléennes
                 return QuadTree(*data)
-
-import tkinter as tk
 
 class TkQuadTree(QuadTree):
     """
