@@ -109,7 +109,7 @@ class TkQuadTree(QuadTree):
         self.root.mainloop()
 
 if __name__ == '__main__':
-    filename = 'quadtree.txt'
+    filename = '../files/quadtree.txt'
     with open(filename, 'r') as file:
         data = eval(file.read())
     tk_quadtree = TkQuadTree(data)
